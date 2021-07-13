@@ -106,7 +106,7 @@ include $(CHIBIOS)/os/common/ports/ARMCMx/compilers/GCC/mk/port_v7m.mk
 #include $(CHIBIOS)/test/oslib/oslib_test.mk
 include st_hal/st_hal.mk
 include drivers/drivers.mk
-include blackmagic/blackmagic.mk
+include blackmagic-integration/blackmagic.mk
 include compression/compression.mk
 
 # Define linker script file here
