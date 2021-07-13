@@ -59,4 +59,10 @@ bool gpio_get(GpioPort_t port, GpioPin_t pin);
 void SWDIO_MODE_FLOAT(void);
 void SWDIO_MODE_DRIVE(void);
 
+/* Global variable used by blackmagic to delay execution a bit.
+ * Set to zero since depending on the optimization level the
+ * compiler might remove the delay anyway.
+ */
+static const uint32_t swd_delay_cnt = 0;
+
 #endif /* BLACKMAGIC_PLATFORM_H_ */
